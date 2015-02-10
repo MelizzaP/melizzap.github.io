@@ -1,4 +1,8 @@
-.center,
+html{
+	background: black;
+}
+
+ .center,
 .left,
 .right{
   display: block;
