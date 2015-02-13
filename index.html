@@ -8,6 +8,9 @@
 
 <body>
   <script src="public/js/jquery-2.1.3.min.js"></script>
+  <script src="public/js/foundation/foundation.js"></script>
+  <script src="public/js/foundation/foundation.reveal.js"></script>
+  
   <div class="row">
       <div class="large-2 columns left">Left</div>
       <div class="large-8 columns center melizza">
@@ -18,22 +21,31 @@
  
   <div class="row">
 	  <div class="large-3 columns left">
-		  <a href="#">
+		  <a class="open-resume" href="#" data-reveal-id="myModal">
 		  	<img id="resume" src="public/img/resume.png" alt="resume" width="890" height="884">
-			  <script>
-			    $(function() {
-			        $("#resume").hover(
-			            function() {
-				            console.log(this)
-			                $(this).attr("src", "public/img/resumegif.gif");
-			            },
-			            function() {
-			                $(this).attr("src", "public/img/resume.png");
-			            }                         
-			        );                  
-			    });
-			</script>
 		  </a>
+		  
+		  <script>
+		    $(function() {
+		        $("#resume").hover(
+		            function() {
+		                $(this).attr("src", "public/img/resumegif.gif");
+		            },
+		            function() {
+		                $(this).attr("src", "public/img/resume.png");
+		            }                         
+		        );                  
+		    });
+		    $('a.open-resume').on('click', function() {
+				$('#resumeModal').foundation('reveal','open');
+			});
+			$('#myModal').foundation('reveal', 'close');
+		  </script>
+		  
+		  <div id="resumeModal" class="reveal-modal" data-reveal>
+			 <embed src="public/img/DevelopmentCV.pdf" width="900" height="500">
+			 <a class="close-reveal-modal">&#215;</a>
+		  </div>
 	  </div>
 	  <div class="large-6 columns center">
 		  <img src="public/img/fullstackdev.png" alt="fullstackdev" width="1121" height="501">
