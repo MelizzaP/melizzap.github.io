@@ -11,3 +11,7 @@ body{
   border-color: red;
 }
 */
+
+.column, .columns {
+  min-height: 30px;
+}
