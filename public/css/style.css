@@ -15,3 +15,7 @@ body{
 .column, .columns {
   min-height: 30px;
 }
+
+img {
+  margin-top: -25px;
+}
