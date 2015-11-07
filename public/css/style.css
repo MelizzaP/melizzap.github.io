@@ -1,16 +1,6 @@
 body{
-	background: black;
+	background: url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
 }
-/*
- .center,
-.left,
-.right{
-  display: block;
-  background: #eac4f5;
-  border-style: solid;
-  border-color: red;
-}
-*/
 
 .column, .columns {
   min-height: 30px;
