@@ -1,39 +1,48 @@
 body{
-	background: url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
+	background: url(../img/bg.png);
 }
 
-.column, .columns {
-  min-height: 30px;
+.hero {
+  display: flex;
+}
+
+.face-and-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h1 {
+  color: rgba(219, 142, 249, 0.56);
+  font-size: 6em;
+  font-family: 'Fredericka the Great', cursive;
+  padding: 20px;
 }
 
 img {
-  margin-top: -25px;
+  height: 45vh;
 }
 
-#tech-blog {
-	margin: 15px 0px 0px 30px;
+.titles {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 4em;
+  justify-content: flex-end;
+  color: red;
 }
 
-.icon {
-	margin-top: 20px;
+.developer {
+  color: rgba(20, 191, 20, 0.69);
 }
 
-#hmom {
-	margin: 32px 0px 0px 15px
+.physicist {
+  color: rgba(76, 109, 210, 0.72);
 }
 
-#skillz {
-	margin: -85px 0px 0px 0px;
-}
-
-#projects {
-	margin: 0px 0px 0px 128px;
-}
-
-#rails {
-	margin-left: 144px;
-}
-
-.links {
-	margin: 20px 0px 0px 174px;
+.random {
+  color: rgba(221, 236, 39, 0.82);
 }
