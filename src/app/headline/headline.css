@@ -1,0 +1,42 @@
+.face-and-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.face-and-name h1 {
+  color: rgba(219, 142, 249, 0.56);
+  font-size: 6em;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: normal;
+  padding: 20px;
+}
+.face-and-name img {
+  height: 45vh;
+}
+.titles {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 4em;
+  justify-content: flex-end;
+  color: red;
+}
+.titles .developer,
+.titles .physicist {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.titles .developer {
+  color: rgba(20, 191, 20, 0.69);
+}
+.titles .physicist {
+  color: rgba(76, 109, 210, 0.72);
+}
+.titles .random {
+  color: rgba(221, 236, 39, 0.82);
+}
+.hero {
+  display: flex;
+}
