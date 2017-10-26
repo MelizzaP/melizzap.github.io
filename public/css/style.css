@@ -26,7 +26,7 @@ img {
 }
 
 .titles {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
   flex-direction: column;
   font-family: 'Fredericka the Great', cursive;
@@ -37,10 +37,14 @@ img {
 
 .developer {
   color: rgba(20, 191, 20, 0.69);
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .physicist {
   color: rgba(76, 109, 210, 0.72);
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .random {
